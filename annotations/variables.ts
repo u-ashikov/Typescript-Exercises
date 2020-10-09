@@ -1,10 +1,9 @@
-let apples: number = 5;
+let apples = 5;
 
 apples = 10;
-apples = 'hello world';
 
-let speed:string = 'fast';
-let hasName: boolean = true;
+let speed = 'fast';
+let hasName = true;
 let nothing: null = null;
 
 let now: Date = new Date();
