@@ -100533,10 +100533,6 @@ var Map_1 = require("./Map");
 var user = new User_1.User();
 var company = new Company_1.Company();
 var map = new Map_1.Map('map');
-console.log(user);
-console.log(company);
-console.log(map); // map.addUserMarker(user);
-
 map.addMarker(company);
 map.addMarker(user);
 },{"./User":"src/User.ts","./Company":"src/Company.ts","./Map":"src/Map.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

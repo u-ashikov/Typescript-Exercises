@@ -1,6 +1,7 @@
 import faker from 'faker';
+import { Mappable } from './Map';
 
-export class User {
+export class User implements Mappable {
     constructor() {
         this.name = faker.name.firstName();
         this.location = {
