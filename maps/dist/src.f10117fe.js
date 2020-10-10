@@ -100473,7 +100473,32 @@ function () {
 }();
 
 exports.Company = Company;
-},{"faker":"node_modules/faker/index.js"}],"src/index.ts":[function(require,module,exports) {
+},{"faker":"node_modules/faker/index.js"}],"src/Map.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Map = void 0;
+
+var Map =
+/** @class */
+function () {
+  function Map(containerId) {
+    this.googleMap = new google.maps.Map(document.getElementById(containerId), {
+      zoom: 1,
+      center: {
+        lat: 0,
+        lng: 0
+      }
+    });
+  }
+
+  return Map;
+}();
+
+exports.Map = Map;
+},{}],"src/index.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -100484,18 +100509,15 @@ var User_1 = require("./User");
 
 var Company_1 = require("./Company");
 
+var Map_1 = require("./Map");
+
 var user = new User_1.User();
 var company = new Company_1.Company();
+var map = new Map_1.Map('map');
 console.log(user);
 console.log(company);
-new google.maps.Map(document.getElementById('map'), {
-  zoom: 1,
-  center: {
-    lat: 0,
-    lng: 0
-  }
-});
-},{"./User":"src/User.ts","./Company":"src/Company.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+console.log(map);
+},{"./User":"src/User.ts","./Company":"src/Company.ts","./Map":"src/Map.ts"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
