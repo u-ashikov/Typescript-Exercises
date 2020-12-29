@@ -1,3 +1,3 @@
 # Typescript-Exercises
 
-This repo contains basic exercises and concepts of TypeScript.
+This repository contains basic exercises and concepts of TypeScript.
